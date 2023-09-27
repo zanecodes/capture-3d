@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>WebXR</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
+    
+    <style>
+      body {
+        overflow: hidden;
+        margin: 0;
+        width: 100vw;
+        height: 100vh;
+        background: black;
+      }
+
+      #canvas {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        touch-action: none;
+      }
+
+      #overlay {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas id="canvas">
+    </canvas>
+    <div id="overlay"></div>
+    <script src="main.js">
+    </script>
+  </body>
+</html>
